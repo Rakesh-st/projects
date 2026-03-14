@@ -1,0 +1,126 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+.nav nav{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.nav a{
+    background-color: transparent;
+    text-decoration: none;
+    color: green;
+    text-align: center;
+    text-shadow: 2px 2px rgb(8, 0, 255);
+    font-size: 43px;
+    font-weight: 600;
+}
+header .active1, .sidebar .active2{
+    text-decoration: underline rgb(0, 0, 0);
+    color: rgb(2, 182, 2);
+}
+.nav a:hover, .sidebar a:hover{
+    color: black;
+    text-shadow: 2px 2.3px 20px rgb(8, 0, 255);
+    border-bottom: 3px dotted blue;
+    border-radius: 20px;
+}
+.cname{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    margin-top: -150px;
+}
+.name{
+    display: flex;
+    justify-content: right;
+    padding: 10px 100px;
+    font-size: 60px;
+}
+.logo{
+    width: 300px;
+}
+i{
+    top: 0;
+    right: 0;
+    display: none;
+    position: fixed;
+    font-size: 50px;
+    color: rgb(200, 0, 0);
+    margin-top: 5px;
+    margin-right: 20px;
+
+}
+i:hover{
+    color: black;
+    text-shadow: 3px 3px 10px blue;
+    font-weight: 700;
+    border-bottom: 3px dotted blue;
+    border-radius: 25px;
+}
+.sidebar{
+    top: 0;
+    right: 0;
+    display: none;
+    position: fixed;
+    align-items: baseline;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    font-size: 48px;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+}
+.sidebar a{
+    margin: 5px;
+    color: green;
+    font-weight: 600;
+    text-shadow: 2px 2px rgb(8, 0, 255);
+
+}
+h1{
+    font-size: 35px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px;
+}
+
+footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer nav a{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+@media (max-width:750px) {
+    .nav a{
+        font-size: 35px;
+        text-shadow: 2px 1px rgb(8, 0, 255);
+    }
+
+}
+@media (max-width:650px) {
+    .nav {
+        display: none;
+    }
+    i{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+  
+}
