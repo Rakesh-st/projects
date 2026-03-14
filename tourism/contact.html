@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+    <title>Tourism in Nepal</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+         <nav>
+            <a href="home.html">home</a>
+            <a href="history.html">history</a>
+            <a href="gallery.html">gallery</a>
+            <a href="destination.html">destination</a>
+            <a href="#" class="active1">contact</a>
+         </nav>
+        </div>
+        <div>
+            <nav class="sidebar">
+                <a href="#" onclick="hideSidebar()"><i class="ri-close-large-line"></i></a><br>
+                <a href="home.html">home</a><br><br>
+                <a href="history.html">history</a><br><br>
+                <a href="gallery.html">gallery</a><br><br>
+                <a href="destination.html">destination</a><br><br>
+                <a href="#" class="active2">contact</a><br><br>
+            </nav>
+            <i onclick="showSidebar()" class="ri-menu-fold-line"></i>
+        </div>
+        <img src="./img/111.png" class="logo">
+        <div>
+            <div class="cname">Tourism</div>
+            <div class="name">by Gakull</div>
+        </div>
+
+    </header>
+    <article>
+        <p>
+            People can contact by different from. If any people are intrested to visit the country Nepal they can contact throught  login process. Intrested people can login which is given in aside. They can also visit our tourism site. They can also directly contact with our manager. People who visits our country with us should flow our rules and regulation. We also have facilities for lodges and Hotels. We also have insurance.
+        </p>
+    </article>
+    <div>
+        <p class="pp">INTRESTED PEOPLE CAN LOGIN</p>
+        <aside>
+            <form class="form">
+                <h2 class="h2">login to visit to nepal</h2>
+                 <span> user name:</span>
+                <br><input class="aa" type="text" placeholder="enter your name">
+                <br><br><span>your country name:</span>
+                <br><input class="aa" type="text" placeholder="enter your country name">
+                <br><br><span>password:</span>
+                <br><input class="aa" type="password" placeholder="enter password">
+                <br><br><span>choose gender:</span>
+                <br>
+                <select name="dropdown">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+                <button type="submit" class="ss">submit</button>
+            </form>
+        </aside>
+    </div>
+    <footer>
+        <nav>
+            <a href="#">copy right</a>
+            <a href="#">terms of service</a>
+        </nav>
+    </footer>
+    <script>
+    function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
